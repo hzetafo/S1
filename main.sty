@@ -1,0 +1,42 @@
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems,breakable}
+
+
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\newtcbtheorem[number within=section]{theorem}{定理}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+\newtcbtheorem[use counter from=theorem]{prop}{命題}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+\newtcbtheorem[use counter from=theorem]{cor}{系}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+\newtcbtheorem[use counter from=theorem]{definition}{定義}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+\newtcbtheorem[use counter from=theorem]{lemma}{補題}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+\newtcbtheorem[use counter from=theorem]{example}{例}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape,
+colframe=burgundy,colback=burgundy!2!white,
+rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+colbacktitle=burgundy,theorem style=standard,breakable,arc=0pt}{tha}
+
+%%%%
