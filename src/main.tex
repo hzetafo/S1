@@ -6,6 +6,9 @@
 %definition->定義
 %lemma->補題
 %example->例
+
+%tcbline->tcolorboxのhrulefill
+%英訳を書く際は\noindent\rule{\linewidth}{0.4pt}
 \begin{document}
 \title{現代数学}
 \author{Hzo,Alps}
@@ -73,7 +76,11 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
 &\bigcup_{\lambda\in\Lambda}Y_\lambda\quad=\{x\in X\mid \text{ある}\lambda\text{に対しても}x\in Y_\lambda\}\\
 &\bigcap_{\lambda\in\Lambda}Y_\lambda\quad=\{x\in X\mid \text{どの}\lambda\text{に対しても}x\in Y_\lambda\}\\
 \end{align*}
-
+\tcbline
+\begin{itemize}
+    \item \textbf{和集合}:union
+    \item \textbf{共通部分}:intersection
+\end{itemize}
 \end{definition}
 \begin{itemize}
 \item 集合差
@@ -83,4 +90,21 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
 \end{itemize}
 
 \subsection{写像}
+\subsubsection{}
+\begin{definition}{写像}{}
+集合$X$から集合$Y$への\textbf{写像}$f$とは,$X$がどの元$x$に対しても$Y$の元$y$が1通りに定まってることを言い,$f\colon X\to Y$とか$X\stackrel{f}{\to}Y$とか書く.
+このとき,$y$を$f$による\textbf{像}と言い,$y=f(x)$と書く.また$Y$が数の集合であるときは,$f$を$X$上の\textbf{関数}と言うことがある.
+%英訳
+\tcbline
+\begin{itemize}
+    \item \textbf{写像}:Mapping,Map
+    \item \textbf{像}:Image
+    \item \textbf{関数}:function
+\end{itemize}
+%
+\end{definition}
+\noindent $\bf{Note1}$:オイラーによる関数の定義は,変数や定数から構成される数式を基にしていた.一方,現代の定義では,関数は独立変数と従属変数の任意の対応関係として捉えられ,必ずしも数式で表現される必要はない.
+
+\noindent $\bf{Note2}$:$y$ に対して $x$ が一意に定まるとは限らないことに注意する.
+
 \end{document}
