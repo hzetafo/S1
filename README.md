@@ -4,6 +4,7 @@
 
 1.1集合　製作途中
 
+
 TODO
 
-Noteをnewcommandとして定義する
+Noteのboxを定義
