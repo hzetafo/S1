@@ -6,4 +6,4 @@
 
 TODO
 
-Noteをnewcommandとして
+Noteをnewcommandとして定義する
