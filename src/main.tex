@@ -12,7 +12,8 @@
 \begin{document}
 \title{現代数学}
 \author{Hzo,Alps}
-
+%%%%記号法を入れる
+%%%%
 \maketitle
 \begin{framed}
 \textbf{注意}
@@ -28,43 +29,37 @@
 \subsection{集合}
 \subsubsection{}
 \begin{definition}{集合}{}
-\textbf{集合}(set)とは,数学的対象の集まりのことを指す.
-集合Xに属する対象を$X$の\textbf{元}(element)あるいは\textbf{要素}といい,
-$x$が$X$の元であることを$x\in X$と表す.
+\textbf{集合}(set)とは,数学的対象の集まりのことを指す.集合Xに属する対象を$X$の\textbf{元}(element)あるいは\textbf{要素}といい,$x$が$X$の元であることを$x\in X$と表す.
 \end{definition}
-\noindent $\bf{Note}$:集合では元の並び順や,同一の元がいくつあるかなどは考えない
+\noindent $\bf{Note1}$:集合では元の並び順や,同一の元がいくつあるかなどは考えない
 \begin{itemize}
 \item 内包的記法,外延的記法
+%\item 集合族
 \item 空集合
 \end{itemize}
 
 \subsubsection{}
 \begin{definition}{部分集合}{}
-$X,Y$を集合とする.$x\in X\Longrightarrow x\in Y$が成り立つとき,
-$X$は$Y$の\textbf{部分集合}(subset)である,
-$X$は$Y$に含まれるなどといい,$X\subset Y$と書く.
+$X,Y$を集合とする.$x\in X\Longrightarrow x\in Y$が成り立つとき,$X$は$Y$の\textbf{部分集合}(subset)である,$X$は$Y$に含まれるなどといい,$X\subset Y$と書く.
 \end{definition}
 \begin{definition}{集合の相当}{}
-$A\subset B $かつ$A\supset B$であるとき,集合$A$と集合$B$は等しいとし,
-$A = B $と書く.
+$A\subset B $かつ$A\supset B$であるとき,集合$A$と集合$B$は等しいとし,$A = B $と書く.
 \end{definition}
 \begin{itemize}
     \item 真部分集合
     \item 補集合
     \item de Morganの法則
 \end{itemize}
-%
-%集合では,元の並び順や,同一の元がいくつあるかなどは考えない
-%上のコメントに関する例題
+
 %%%%
 %%%%練習問題
-\begin{oframed}
-\noindent\textbf{例題}
-\begin{enumerate}
-    \item 全ての集合は空集合を部分集合として含むことを示せ.
-    \item $X\subset Y$かつ,$Y\subset Z$ならば$X\subset Z$であることを示せ.%変える可能性あり.
-\end{enumerate}
-\end{oframed}
+%\begin{oframed}
+%\noindent\textbf{例題}
+%\begin{enumerate}
+%    \item 全ての集合は空集合を部分集合として含むことを示せ.
+%    \item $X\subset Y$かつ,$Y\subset Z$ならば$X\subset Z$であることを示せ.%変える可能性あり.
+%\end{enumerate}
+%\end{oframed}
 %%%%
 %%%%
 \subsubsection{}
@@ -84,11 +79,15 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
 \end{definition}
 \begin{itemize}
 \item 集合差
-\item 積集合
+\item 直積集合
 \item 冪集合
 \item 対象差
 \end{itemize}
-
+%%%%
+%%%%直積集合/直積集合の普遍性
+%%%%直和集合/直和の普遍性
+%%%%
+%%%%
 \subsection{写像}
 \subsubsection{}
 \begin{definition}{写像}{}
@@ -106,5 +105,45 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
 \noindent $\bf{Note1}$:オイラーによる関数の定義は,変数や定数から構成される数式を基にしていた.一方,現代の定義では,関数は独立変数と従属変数の任意の対応関係として捉えられ,必ずしも数式で表現される必要はない.
 
 \noindent $\bf{Note2}$:$y$ に対して $x$ が一意に定まるとは限らないことに注意する.
+\begin{itemize}
+  \item 単射,全射,全単射
+  \item 写像の相当
+  \item 制限写像
+  \item 写像の合成
+  \item 包含写像,恒等写像
+\end{itemize}
+%%%
+\clearpage
+\centerline{\huge{\textbf{第一章のまとめ}}}
+\begin{shaded}
+\noindent\textbf{定義した概念}
+\begin{multicols}{2}
+\begin{itemize}
+  \item 集合,元
+  \item 内包的記法,外延的記法
+%  \item 集合族 <-添字集合
+  \item 空集合 
+  \item 部分集合
+  \item 真部分集合
+  \item 補集合
+  \item de Morganの法則
+  \item 和集合,共通部分
+  \item 集合差
+  \item 直積集合
+  \item 冪集合
+  \item 対象差
+  \item 写像,像,関数
+  \item 単射,全射,全単射
+  \item 写像の相当
+  \item 制限写像
+  \item 写像の合成
+  \item 包含写像,恒等写像
+\end{itemize}
+\end{multicols}
+%選択公理
+\end{shaded}
+\clearpage
+
+\centering{\textbf{演習問題}}
 
 \end{document}
