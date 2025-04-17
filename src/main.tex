@@ -1,5 +1,6 @@
 \documentclass[dvipdfmx,b4j]{jsarticle}
 \usepackage{main}
+\usepackage{ascolorbox}
 %theorem->定理
 %prop->命題
 %cor->系
@@ -12,9 +13,6 @@
 \begin{document}
 \title{現代数学}
 \author{Hzo,Alps}
-%%%%記号法を入れる
-
-%%%%
 \maketitle
 
 \begin{framed}
@@ -28,6 +26,8 @@
 \tableofcontents
 
 \section{}
+% ある命題$P$が成り立つことが示されたとき,その命題$P$を\textbf{定理}(theorem)と呼び,それが成り立つことを示す操作を\textbf{証明}(proof)と呼ぶのである.ここで,証明のための出発点となる基本仮定は,\textbf{公理}(axiom)とも呼ばれる.ある定理を証明するために用いられる補助的な定理を\textbf{補題}(lemma)と呼び,ある定理から副次的に,「容易に」得られる定理を$P$の\textbf{系}(corollary)と呼ぶ
+%
 \subsection{命題論理}
 \subsubsection{}
 \begin{definition}{命題}{}
@@ -39,15 +39,14 @@
   \item 十分条件,必要条件,必要十分条件
   \item 量化記号
 \end{itemize}
-%命題$P$が正しいことを$P$は真である(true)といい,逆に正しくないことを$P$は偽(false)であるという.
+%命題$P$が正しいことを$P$は\textbf{真である}(true)といい,逆に正しくないことを$P$は\textbf{偽である}(false)という.
 
-%命題は「当てはめるものに応じて真偽が変わりうる記号」を含んでいても良い.このような記号を自由変数という.
-%命題,排中律
-%必要条件、十分条件、必要十分条件
-%同値、真偽表
+命題は「当てはめるものに応じて真偽が変わりうる記号」を含んでいても良い.このような記号を自由変数という.
+%
 %定理、証明,公理,補題、系
-%de Morgan 変数　量子化
+
 \subsection{集合}
+
 \subsubsection{}
 %数,図形,関係など数学的操作の対象となるものを,単に対象（object）と呼び,
 %．‘集合’比つぎの§ 1. 2以下で述べるような公理系を満足させる特別な対象である
@@ -65,6 +64,9 @@
 %集合とは一つの総体Mであり,それを形成するものm(それはMの要素
 %と呼ばれる)は,それぞれ確定し,互いに識別され得る,われわれの直観または
 %思惟の対象である.  Cantor1895「超限集合論」
+
+%集合論で扱う対象を集合という
+
 \begin{definition}{集合}{}
 \textbf{集合}(set)とは,数学的対象の集まりのことを指す.集合Xに属する対象を$X$の\textbf{元}(element)あるいは\textbf{要素}といい,$x$が$X$の元であることを$x\in X$と表す.
 \end{definition}
@@ -151,6 +153,7 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
   \item 制限写像
   \item 写像の合成
   \item 包含写像,恒等写像
+  \item 逆像・ファイバー
 \end{itemize}
 %%%
 \clearpage
@@ -185,7 +188,9 @@ $X$の部分集合族$\{Y_\lambda\mid\lambda\in\Lambda\}$の\textbf{和集合}$\
 \clearpage
 
 \centering{\textbf{演習問題}}
+\
 \clearpage
 \section{}
+\clearpage
 
 \end{document}
